@@ -65,7 +65,8 @@ When users onboard through globaliDConnect or localiD*, they are guided them thr
 ![Missing Attestations](images/attestations_1.png)
 
 **User already has the required attestations:**
-![Has Attestations](images/
+![Has Attestations](images/attestations_2.png)
+
 \* localiD attestation flow coming soon
 
 ## Configuring Attestations
@@ -74,13 +75,11 @@ You may specify a set of required attestations for your users by creating an Att
 
   
 
-Requirement #
+### Requirement
 
--   Approved Agencies: list of attestation agencies that you trust to attest your users’ information
-    
--   Timestamp: any requirements around recency of the attestation, formatted in seconds, if possible
-    
--   Required attestation types: a list of the attestation types that a user must obtain in order to access your service as well as their logic, that is, whether a user must obtain all the attestations (i.e. “AND” conditions) or just some of them (e.g. “OR” conditions)
+ * **Approved Agencies**: list of attestation agencies that you trust to attest your users’ information.
+ * **Timestamp**: any requirements around recency of the attestation, formatted in seconds, if possible.
+ * **Required attestation types**: a list of the attestation types that a user must obtain in order to access your service as well as their logic, that is, whether a user must obtain all the attestations (i.e. “AND” conditions) or just some of them (e.g. “OR” conditions).
     
 
   
@@ -154,6 +153,6 @@ agency_app_uuid:  ["c4ecd19d-a6c5-488c-904b-0e508ab221ec"]  //  UUID  of  mandri
 
 allOf:  ["email"]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MzM1MDk3OCwtMTU0MDk0ODg0MSwtMT
-k0MDczMTU4OV19
+eyJoaXN0b3J5IjpbLTEzNzg2MjI5NDcsLTE1NDA5NDg4NDEsLT
+E5NDA3MzE1ODldfQ==
 -->
