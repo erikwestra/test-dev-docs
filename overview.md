@@ -61,7 +61,12 @@ For example, if your users must be older than the age of 18, you may require tha
 
 When users onboard through globaliDConnect or localiD*, they are guided them through the process of requesting any required attestations that they do not yet have attached to their globaliD Names, as shown in the first image below. If they already have attestations that conform to your requirements, the user will simply be asked to consent to share their attestations with you, as shown in the second image below.
 
-* localiD attestation flow coming soon
+**User does not yet have the required attestations:**
+![Missing Attestations](images/attestations_1.png)
+
+**User already has the required attestations:**
+![Has Attestations](images/
+\* localiD attestation flow coming soon
 
 ## Configuring Attestations
 
@@ -149,6 +154,6 @@ agency_app_uuid:  ["c4ecd19d-a6c5-488c-904b-0e508ab221ec"]  //  UUID  of  mandri
 
 allOf:  ["email"]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzcxMjMwOTksLTE1NDA5NDg4NDEsLT
-E5NDA3MzE1ODldfQ==
+eyJoaXN0b3J5IjpbMTA1MzM1MDk3OCwtMTU0MDk0ODg0MSwtMT
+k0MDczMTU4OV19
 -->
