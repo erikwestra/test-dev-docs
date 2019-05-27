@@ -91,32 +91,24 @@ In this case, the exchange would send globaliD the following:
 
 **Requirement 1**
 
--   Approved Agencies: Au10tix, Onfido
--   Timestamp: 604800
--   Required attestation types:
--   legal first name and legal last name and address
--   Identity card number or passport number
+ * Approved Agencies: Au10tix, Onfido
+ * Timestamp: 604800
+ * Required attestation types:
+    * Legal first name and legal last name and address
+    * Identity card number or passport number
 
 **Requirement 2**
 
--   Approved Agencies: Mandrill
--   Required attestation types:
-
--   email
-    
-
-  
+ * Approved Agencies: Mandrill
+ * Required attestation types:
+    * email
 
 Once we receive these requirements, we will translate them into a simple DSL object. Using the example above:
 
-  
-  
-
+```
 requirements:
-
-requirement1:
-
-agency_app_uuid:  ["83d06855-037e-4b94-9909-ed2a1136d63d",  "0b66efb6-7ca2-4c0f-8554-c0c127f303c2"]  //  UUIDs  of  agencies  you  approved
+  requirement1:
+    agency_app_uuid:  ["83d06855-037e-4b94-9909-ed2a1136d63d",  "0b66efb6-7ca2-4c0f-8554-c0c127f303c2"]  //  UUIDs  of  agencies  you  approved
 
 created_at_lte:  604800  //  Seconds  in  a  week
 
@@ -131,7 +123,8 @@ requirement2:
 agency_app_uuid:  ["c4ecd19d-a6c5-488c-904b-0e508ab221ec"]  //  UUID  of  mandril
 
 allOf:  ["email"]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzUxMjgxMSwtMTU0MDk0ODg0MSwtMT
+eyJoaXN0b3J5IjpbMTQ2MjQ3OTI5MywtMTU0MDk0ODg0MSwtMT
 k0MDczMTU4OV19
 -->
