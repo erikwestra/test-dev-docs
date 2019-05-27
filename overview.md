@@ -4,7 +4,7 @@
 
 globaliD is a San Francisco-based portable digital identity platform that is revolutionizing how we transact online. Our platform delivers a convenient onboarding and single sign-on experience, while empowering users to build digital reputations and to maintain consent-based control over their personal data. Our solution frees our partners from the burden of data storage and security, while still allowing them confidence in the validity of their users’ data and maintaining their compliance.
 
-At this time, our product offerings include [globaliDConnect](FIXME), a secure user authentication and verification OAuth2 implementation, and [localiD](https://docs.google.com/document/d/1WZtt_eZWe6A5KkyARVfKoYiIunkir2mIOQxr-uS1lyI/edit#heading=h.2j43ipai5j0l), a web-based identity management SDK.
+At this time, our product offerings include [globaliDConnect](FIXME), a secure user authentication and verification OAuth2 implementation, and [localiD](FIXME), a web-based identity management SDK.
 
 # globaliDConnect
 
@@ -22,8 +22,15 @@ globaliDConnect is a lightweight solution with heavyweight benefits, including:
 
 OpenID Connect support is coming soon.
 
+## Learn more about globaliDConnect
+
+ * [Demo](https://about.globalid.net/demo/sign-in/)
+ * [globaliDConnect Documentation](https://openapi.globalid.net/docs/connect.html)
+ * [API Documentation](https://openapi.globalid.net/index.html)
+ * [NPM Package](https://www.npmjs.com/package/globalid-connect)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NjI3MjU5LC0xNTQwOTQ4ODQxLC0xOT
-QwNzMxNTg5XX0=
+eyJoaXN0b3J5IjpbMTgxODAxOTE5OCwtMTU0MDk0ODg0MSwtMT
+k0MDczMTU4OV19
 -->
