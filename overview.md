@@ -1,6 +1,7 @@
-![globaliD Logo](images/giD_logo.png =100x32)
+![globaliD Logo](images/giD_logo.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDk4NTA5NCwtMTk0MDczMTU4OV19
+eyJoaXN0b3J5IjpbLTE1NDA5NDg4NDEsLTE5NDA3MzE1ODldfQ
+==
 -->
