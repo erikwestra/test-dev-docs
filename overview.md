@@ -73,55 +73,34 @@ When users onboard through globaliDConnect or localiD*, they are guided them thr
 
 You may specify a set of required attestations for your users by creating an Attestation Claims Requirement Configuration (ACRC). This configuration defines the set of attestations that users are required to have in order to access your service. You may call our APIs to retrieve a [list of available attestation agencies](https://openapi.globalid.net/index.html#/Attestations/AttestationsGetAgenciesWithChildren) and a [list of available attestation types](https://openapi.globalid.net/index.html#/Attestations/AttestationsGetTypes) to assist in defining your ACRC. We will codify this configuration into an acrc_id. Please define your required attestation agencies and types, and send them to us via email in the following format:
 
-  
-
-### Requirement
+### Requirements
 
  * **Approved Agencies**: list of attestation agencies that you trust to attest your users’ information.
  * **Timestamp**: any requirements around recency of the attestation, formatted in seconds, if possible.
  * **Required attestation types**: a list of the attestation types that a user must obtain in order to access your service as well as their logic, that is, whether a user must obtain all the attestations (i.e. “AND” conditions) or just some of them (e.g. “OR” conditions).
-    
 
-  
-
-###### Example
+### Example
 
 An online exchange requires its users to attest their legal first and last names, and address in order to fulfil its compliance obligations. The exchange determines that they have the most confidence in information deriving from government-issued identity documents, such as an identity card, driver’s license or passport. It also determines that this information must be recent, so the user must have requested the attestation within the last week.
 
-  
-
 After assessing the globaliD attestation agencies that attest to these documents, the exchange determines that Au10tix and Onfido best meet their needs.
-
-  
 
 Further, the exchange requires that each user maintains an email on file with globaliD so that it may, in future, use the globaliD notification system to contact user via email. It determines that the Mandrill attestation agency would be the best candidate to provide this attestation.
 
 In this case, the exchange would send globaliD the following:
 
-  
-
-Requirement 1
+**Requirement 1**
 
 -   Approved Agencies: Au10tix, Onfido
-    
 -   Timestamp: 604800
-    
 -   Required attestation types:
-    
-
 -   legal first name and legal last name and address
-    
 -   Identity card number or passport number
-    
 
-  
-
-Requirement 2
+**Requirement 2**
 
 -   Approved Agencies: Mandrill
-    
 -   Required attestation types:
-    
 
 -   email
     
@@ -153,6 +132,6 @@ agency_app_uuid:  ["c4ecd19d-a6c5-488c-904b-0e508ab221ec"]  //  UUID  of  mandri
 
 allOf:  ["email"]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzg2MjI5NDcsLTE1NDA5NDg4NDEsLT
-E5NDA3MzE1ODldfQ==
+eyJoaXN0b3J5IjpbMTI3MzUxMjgxMSwtMTU0MDk0ODg0MSwtMT
+k0MDczMTU4OV19
 -->
