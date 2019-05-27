@@ -106,25 +106,18 @@ In this case, the exchange would send globaliD the following:
 Once we receive these requirements, we will translate them into a simple DSL object. Using the example above:
 
 ```
-requirements:
-  requirement1:
-    agency_app_uuid:  ["83d06855-037e-4b94-9909-ed2a1136d63d",  "0b66efb6-7ca2-4c0f-8554-c0c127f303c2"]  //  UUIDs  of  agencies  you  approved
-
-created_at_lte:  604800  //  Seconds  in  a  week
-
-allOf:  ["legal_first_name",  "legal_last_name",  "address"]
-
-oneOf:  ["identity_card_number",  "passport_number"]`
-
-  
-
-requirement2:
-
-agency_app_uuid:  ["c4ecd19d-a6c5-488c-904b-0e508ab221ec"]  //  UUID  of  mandril
-
+requirements: {
+  requirement1: {
+    agency_app_uuid: ["83d06855-037e-4b94-9909-ed2a1136d63d",  "0b66efb6-7ca2-4c0f-8554-c0c127f303c2"],  //  UUIDs of agencies you approved
+    created_at_lte: 604800,  //  Seconds in a week
+    allOf:  ["legal_first_name",  "legal_last_name",  "address"],
+    oneOf:  ["identity_card_number",  "passport_number"]
+  },
+  requirement2: {
+    agency_app_uuid:  ["c4ecd19d-a6c5-488c-904b-0e508ab221ec"],  //  UUID of mandril
 allOf:  ["email"]
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjQ3OTI5MywtMTU0MDk0ODg0MSwtMT
-k0MDczMTU4OV19
+eyJoaXN0b3J5IjpbLTE2MzQ2MTc5NDksLTE1NDA5NDg4NDEsLT
+E5NDA3MzE1ODldfQ==
 -->
