@@ -5,8 +5,7 @@ Seamless, secure and trusted user onboarding and login
 
 [Overview](#overview)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Web/Mobile Support](#webmobile-support)
-
+&nbsp;&nbsp;&nbsp;&nbsp;[Web/Mobile Support](#webmobile-support)    
 &nbsp;&nbsp;&nbsp;&nbsp;[Attestation Requirements](#attestation-requirements)
 [Getting Started](#getting-started)
 
@@ -263,6 +262,6 @@ access_denied
 
 The resource owner denied the request
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUyMjQ2ODk5LC0zOTA5MzY1NjEsMTU0MT
-U5MDAsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTcxNjUzMDA3OSwtMzkwOTM2NTYxLDE1ND
+E1OTAwLC0yMDg4NzQ2NjEyXX0=
 -->
