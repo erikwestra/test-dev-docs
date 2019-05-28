@@ -4,8 +4,11 @@
 Seamless, secure and trusted user onboarding and login
 
 [Overview](#overview)
-<quote>[Web/Mobile Support](#webmobile-support)</quote>
- 
+&nbsp;&nbsp;&nbsp;&nbsp;[Web/Mobile Support](#webmobile-support)
+&nbsp;&nbsp;&nbsp;&nbsp;[Attestation Requirements](#attestation-requirements)
+[Getting Started](#getting-started)
+&nbsp;&nbsp;&nbsp;&nbsp;[Redirect URL](#redirect-url)
+&nbsp;&nbsp;&nbsp;&nbsp;[Attestation Consent Request Configuration (ACRC)](#attestation-consent-request-configuration-acrc) 
 **  
 **
 
@@ -53,6 +56,6 @@ globaliDConnect allows you to customize the specific attestations required for u
 
 When users onboard through globaliDConnect, the globaliD App will guide them through the process of requesting any required attestations that they do not yet have attached to their globaliD Names, as shown in the first image below. If they already have attestations that conform to your requirements, the user will simply be asked to consent to share their attestations with you, as shown in the second image below.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzEyMDE4NTgsMTU0MTU5MDAsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTE4NzQyOTczOSwxNTQxNTkwMCwtMjA4OD
+c0NjYxMl19
 -->
