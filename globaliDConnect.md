@@ -50,10 +50,66 @@ The [specifications](#specifications) below are provided for your information. O
  * 
 Once we receive, review and approve this information, we will provide you with a `client_id`, `client_secret`, and `acrc_id`, which you may use to load the globaliDConnect authentication client and obtain access tokens or authorization codes. We will send these to you via email in a password-protected encrypted archive.
 
-## Redirect URL
+### Redirect URL
 
-This is the redirect URL to which users will be returned following successful onboarding or login. It should be in HTTPS format. You may provide multiple URLs (e.g. to different environments) if you wish. We will provide a unique client_id and client_secret for each environment.
+This is the redirect URL to which users will be returned following successful onboarding or login. It should be in HTTPS format. You may provide multiple URLs (e.g. to different environments) if you wish. We will provide a unique `client_id` and `client_secret` for each environment.
+
+### Attestation Consent Request Configuration (ACRC)
+
+This configuration defines the set of attestations that users are required to have in order to access your service. You may call our APIs to retrieve a [list of available attestation agencies](https://openapi.globalid.net/index.html#/Attestations/AttestationsGetAgenciesWithChildren) and a [list of available attestation types](https://openapi.globalid.net/index.html#/Attestations/AttestationsGetTypes) to assist in defining your ACRC. We will codify this configuration into an `acrc_id`. Please define your required attestation agencies and types, and send them to us via email in the following format:
+
+**Requirement*)
+
+ * Approved Agencies: list of attestation agencies that you trust to attest your users’ information
+    
+-   Timestamp: any requirements around recency of the attestation, formatted in seconds, if possible
+    
+-   Required attestation types: a list of the attestation types that a user must obtain in order to access your service as well as their logic, that is, whether a user must obtain all the attestations (i.e. “AND” conditions) or just some of them (e.g. “OR” conditions)
+    
+
+  
+
+###### Example
+
+An online exchange requires its users to attest their legal first and last names, and address in order to fulfil its compliance obligations. The exchange determines that they have the most confidence in information deriving from government-issued identity documents, such as an identity card, driver’s license or passport. It also determines that this information must be recent, so the user must have requested the attestation within the last week.
+
+  
+
+After assessing the globaliD attestation agencies that attest to these documents, the exchange determines that Au10tix and Onfido best meet their needs.
+
+  
+
+Further, the exchange requires that each user maintains an email on file with globaliD so that it may, in future, use the globaliD notification system to contact user via email. It determines that the Mandrill attestation agency would be the best candidate to provide this attestation.
+
+In this case, the exchange would send globaliD the following:
+
+  
+
+Requirement 1
+
+-   Approved Agencies: Au10tix, Onfido
+    
+-   Timestamp: 604800
+    
+-   Required attestation types:
+    
+
+-   legal first name and legal last name and address
+    
+-   Identity card number or passport number
+    
+
+  
+
+Requirement 2
+
+-   Approved Agencies: Mandrill
+    
+-   Required attestation types:
+    
+
+-   email
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMjU1MjQ4MSwxNTQxNTkwMCwtMjA4OD
-c0NjYxMl19
+eyJoaXN0b3J5IjpbMzEyNzMwNjI4LDE1NDE1OTAwLC0yMDg4Nz
+Q2NjEyXX0=
 -->
