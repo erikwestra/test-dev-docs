@@ -4,7 +4,7 @@
 
 globaliD is a San Francisco-based portable digital identity platform that is revolutionizing how we transact online. Our platform delivers a convenient onboarding and single sign-on experience, while empowering users to build digital reputations and to maintain consent-based control over their personal data. Our solution frees our partners from the burden of data storage and security, while still allowing them confidence in the validity of their users’ data and maintaining their compliance.
 
-At this time, our product offerings include [globaliDConnect](FIXME), a secure user authentication and verification OAuth2 implementation, and [localiD](FIXME), a web-based identity management SDK.
+At this time, our product offerings include [globaliDConnect](globaliDConnect.md), a secure user authentication and verification OAuth2 implementation, and [localiD](localiD.md), a web-based identity management SDK.
 
 # globaliDConnect
 
@@ -119,6 +119,6 @@ requirements: {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDM4ODI5MCwtNDY4MzI0MzA2LDExNj
-UxMzYwMDAsLTE1NDA5NDg4NDEsLTE5NDA3MzE1ODldfQ==
+eyJoaXN0b3J5IjpbLTE4MDk2ODc5ODYsLTQ2ODMyNDMwNiwxMT
+Y1MTM2MDAwLC0xNTQwOTQ4ODQxLC0xOTQwNzMxNTg5XX0=
 -->
