@@ -88,30 +88,22 @@ In this case, the exchange would send globaliD the following:
  * Required attestation types:
    * email
 
-# Specifications
+## Specifications
 
 globaliDConnect is an OAuth2 implementation for the globaliD platform and globaliD App that supports user authentication with conditional attestation requirements.
 
-  
+To use globaliDConnect, the globaliDConnect authentication client must be loaded via a [URL](url-format) with the correct [parameters](uri-parameters).  The client can be loaded in a browser window.
 
-To use globaliDConnect, the globaliDConnect authentication client must be loaded via a [URL](https://docs.google.com/document/d/1H3mJmgwgvGmzJZWCqZZvTkcH5pj96HkGwta6PLRNJHo/edit#heading=h.la5tvbxyjmfa) with the correct [URI parameters](https://docs.google.com/document/d/1H3mJmgwgvGmzJZWCqZZvTkcH5pj96HkGwta6PLRNJHo/edit#heading=h.82jdz0hhxx8q). The client can be loaded in a browser window.
+### URL format
 
-## URL format
-
-  
-
+```
 https://auth.globalid.net
-
-###### ?client_id=<client_id>
-
-&response_type=<response_type>
-
-&scope=<scope>
-
-&redirect_uri=<redirect_uri>
-
-&web=<true | null>
-
+   ?client_id=<client_id>
+   &response_type=<response_type>
+   &scope=<scope>
+   &redirect_uri=<redirect_uri>
+   &web=<true | null>
+```
   
 
 #### Example URL
@@ -260,6 +252,6 @@ access_denied
 
 The resource owner denied the request
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MzM2MjU3LDE1NDE1OTAwLC0yMDg4Nz
-Q2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE2MzY0NTgwMDksMTU0MTU5MDAsLTIwOD
+g3NDY2MTJdfQ==
 -->
