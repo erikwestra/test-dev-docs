@@ -104,13 +104,16 @@ https://auth.globalid.net
    &redirect_uri=<redirect_uri>
    &web=<true | null>
 ```
-  
 
 #### Example URL
 
-[https://auth.globalid.net?client_id=9e54b4bd-eb2f-442b-b8da-666387c15b7c&response_type=code&scope=public&redirect_uri=https%3A%2F%2Fexample.com%2Flogin%2F](https://auth.globalid.net?client_id=9e54b4bd-eb2f-442b-b8da-666387c15b7c&response_type=code&scope=public&redirect_uri=https%3A%2F%2Fexample.com%2Flogin%2F)
+```
+https://auth.globalid.net?client_id=9e54b4bd-eb2f-442b-b8da-666387c15b7c&response_type=code&scope=public&redirect_uri=https%3A%2F%2Fexample.com%2Flogin%2F
+```
 
-## URl parameters
+### URl parameters
+
+The following parameters may be included in the URL:
 
 ### Web View
 
@@ -252,6 +255,6 @@ access_denied
 
 The resource owner denied the request
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzY0NTgwMDksMTU0MTU5MDAsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTM5MDkzNjU2MSwxNTQxNTkwMCwtMjA4OD
+c0NjYxMl19
 -->
