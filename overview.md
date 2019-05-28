@@ -61,7 +61,7 @@ For example, if your users must be older than the age of 18, you may require tha
 
 When users onboard through globaliDConnect or localiD*, they are guided them through the process of requesting any required attestations that they do not yet have attached to their globaliD Names, as shown in the first image below. If they already have attestations that conform to your requirements, the user will simply be asked to consent to share their attestations with you, as shown in the second image below.
 
-| User does not yet have the required attestations: | User already has the required attestations |
+| User does not yet have the required attestations | User already has the required attestations |
 | ------------------ | ------------------ |
 | ![Missing Attestations](images/attestations-1.png) | ![Has Attestations](images/attestations-2.png) |
 
@@ -119,6 +119,6 @@ requirements: {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2ODMyNDMwNiwxMTY1MTM2MDAwLC0xNT
-QwOTQ4ODQxLC0xOTQwNzMxNTg5XX0=
+eyJoaXN0b3J5IjpbMTQzMDM4ODI5MCwtNDY4MzI0MzA2LDExNj
+UxMzYwMDAsLTE1NDA5NDg4NDEsLTE5NDA3MzE1ODldfQ==
 -->
