@@ -58,32 +58,21 @@ This is the redirect URL to which users will be returned following successful on
 
 This configuration defines the set of attestations that users are required to have in order to access your service. You may call our APIs to retrieve a [list of available attestation agencies](https://openapi.globalid.net/index.html#/Attestations/AttestationsGetAgenciesWithChildren) and a [list of available attestation types](https://openapi.globalid.net/index.html#/Attestations/AttestationsGetTypes) to assist in defining your ACRC. We will codify this configuration into an `acrc_id`. Please define your required attestation agencies and types, and send them to us via email in the following format:
 
-**Requirement*)
+#### Requirement
 
- * Approved Agencies: list of attestation agencies that you trust to attest your users’ information
-    
--   Timestamp: any requirements around recency of the attestation, formatted in seconds, if possible
-    
--   Required attestation types: a list of the attestation types that a user must obtain in order to access your service as well as their logic, that is, whether a user must obtain all the attestations (i.e. “AND” conditions) or just some of them (e.g. “OR” conditions)
-    
+ * **Approved Agencies**: list of attestation agencies that you trust to attest your users’ information.
+ * **Timestamp**: any requirements around recency of the attestation, formatted in seconds, if possible.
+ * **Required attestation types**: a list of the attestation types that a user must obtain in order to access your service as well as their logic, that is, whether a user must obtain all the attestations (i.e. “AND” conditions) or just some of them (e.g. “OR” conditions)
 
-  
-
-###### Example
+#### Example
 
 An online exchange requires its users to attest their legal first and last names, and address in order to fulfil its compliance obligations. The exchange determines that they have the most confidence in information deriving from government-issued identity documents, such as an identity card, driver’s license or passport. It also determines that this information must be recent, so the user must have requested the attestation within the last week.
 
-  
-
 After assessing the globaliD attestation agencies that attest to these documents, the exchange determines that Au10tix and Onfido best meet their needs.
-
-  
 
 Further, the exchange requires that each user maintains an email on file with globaliD so that it may, in future, use the globaliD notification system to contact user via email. It determines that the Mandrill attestation agency would be the best candidate to provide this attestation.
 
 In this case, the exchange would send globaliD the following:
-
-  
 
 Requirement 1
 
@@ -110,6 +99,6 @@ Requirement 2
 
 -   email
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEyNzMwNjI4LDE1NDE1OTAwLC0yMDg4Nz
-Q2NjEyXX0=
+eyJoaXN0b3J5IjpbLTEwNDU5NTg1NDcsMTU0MTU5MDAsLTIwOD
+g3NDY2MTJdfQ==
 -->
