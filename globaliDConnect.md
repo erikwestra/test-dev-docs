@@ -74,31 +74,192 @@ Further, the exchange requires that each user maintains an email on file with gl
 
 In this case, the exchange would send globaliD the following:
 
-Requirement 1
+** Requirement 1**
 
--   Approved Agencies: Au10tix, Onfido
-    
--   Timestamp: 604800
-    
--   Required attestation types:
-    
+ * Approved Agencies: Au10tix, Onfido
+ * Timestamp: 604800
+ * Required attestation types:
+    * legal first name and legal last name and address
+    * Identity card number or passport number
 
--   legal first name and legal last name and address
-    
--   Identity card number or passport number
-    
+**Requirement 2**
+
+ * Approved Agencies: Mandrill
+ * Required attestation types:
+   * email
+
+# Specifications
+
+globaliDConnect is an OAuth2 implementation for the globaliD platform and globaliD App that supports user authentication with conditional attestation requirements.
 
   
 
-Requirement 2
+To use globaliDConnect, the globaliDConnect authentication client must be loaded via a [URL](https://docs.google.com/document/d/1H3mJmgwgvGmzJZWCqZZvTkcH5pj96HkGwta6PLRNJHo/edit#heading=h.la5tvbxyjmfa) with the correct [URI parameters](https://docs.google.com/document/d/1H3mJmgwgvGmzJZWCqZZvTkcH5pj96HkGwta6PLRNJHo/edit#heading=h.82jdz0hhxx8q). The client can be loaded in a browser window.
 
--   Approved Agencies: Mandrill
+## URL format
+
+  
+
+https://auth.globalid.net
+
+###### ?client_id=<client_id>
+
+&response_type=<response_type>
+
+&scope=<scope>
+
+&redirect_uri=<redirect_uri>
+
+&web=<true | null>
+
+  
+
+#### Example URL
+
+[https://auth.globalid.net?client_id=9e54b4bd-eb2f-442b-b8da-666387c15b7c&response_type=code&scope=public&redirect_uri=https%3A%2F%2Fexample.com%2Flogin%2F](https://auth.globalid.net?client_id=9e54b4bd-eb2f-442b-b8da-666387c15b7c&response_type=code&scope=public&redirect_uri=https%3A%2F%2Fexample.com%2Flogin%2F)
+
+## URl parameters
+
+### Web View
+
+Key: web=true
+
+This parameter prevents the widget from displaying the mobile view, and is useful when loading globaliDConnect inside smaller windows.
+
+### Response types
+
+Key: response_type
+
+2 response types are available for use:
+
+-   Implicit token: token
     
--   Required attestation types:
+-   Authorization code: code
     
 
--   email
+#### Implicit Token
+
+This response type contains the user’s access token, which can be used directly with our API. For security reasons, this response type is only available when globaliDConnect is initiated inside a window. The token is returned by redirecting to the redirect_uri, with the token attached to the URL.
+
+##### Response format
+
+<redirect_uri>#token=<token>
+
+#### Authorization code
+
+##### Response format
+
+<redirect_uri>&grant_type=authorization_code&code=<code>
+
+### Scope
+
+Key: scope
+
+Supported scopes:
+
+-   public
+    
+
+### Redirect URL
+
+Key: redirect_uri
+
+This parameter is the callback URL set on your client, and serves as an additional check when initiating an authorization request.
+
+### Attestation Consent Request Configuration
+
+Key: acrc_id
+
+A uuid representing an attestation consent request configuration. An attestation consent request configuration determines what set of attestations are required by the user to be able to authenticate with GlobaliD Connect.
+
+## Response handling
+
+### Success Response
+
+Upon successful login, globaliDConnect both redirects back to the redirect URL saved on the app and appends relevant information to it. Depending on the response_type we have 2 URL formats:
+
+1.  ##### Implicit token: `response_type=token`
+    
+
+<redirect_uri>#token=<token>
+
+2.  ##### Authorization code: `response_type=code`
+    
+
+<redirect_uri>?grant_type=authorization_code&code=<code>
+
+##### Examples for getting the access token with the authorization code
+
+###### 
+
+----------
+
+###### BASH Example
+
+  
+
+curl
+
+-d "client_id=<client_id>"
+
+-d "client_secret=<client_secret>"
+
+-d "redirect_uri=<redirect_uri>"
+
+-d "code=<code>"
+
+-d "grant_type=authorization_code"
+
+-H "Content-Type: application/x-www-form-urlencoded"
+
+-X POST https://api.globalid.net/v1/auth/token
+
+###### NodeJS
+
+axios.request({
+
+url: '/auth/token',
+
+baseURL: 'https://api.globalid.net',
+
+headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+
+data: {
+
+client_id: <client_id>,
+
+client_secret: <client_secret>,
+
+redirect_uri: <redirect_uri>,
+
+code: <code>,
+
+grant_type: 'authorization_code'
+
+}
+
+})
+
+----------
+
+### Error Response
+
+<redirect_uri>?error=<error_code>&error_description=<>
+
+  
+
+The error_description string is URI encoded.
+
+  
+
+Error Code
+
+Error Description
+
+access_denied
+
+The resource owner denied the request
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDU5NTg1NDcsMTU0MTU5MDAsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTg4MzM2MjU3LDE1NDE1OTAwLC0yMDg4Nz
+Q2NjEyXX0=
 -->
