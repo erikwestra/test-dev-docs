@@ -45,20 +45,15 @@ When users onboard through globaliDConnect, the globaliD App will guide them thr
 ## Getting Started
 
 The [specifications](#specifications) below are provided for your information. Once you’re ready to get started, please email us at [hello@global.id](mailto:hello@global.id) with the following information:
-
--   [Redirect URL](https://docs.google.com/document/d/1H3mJmgwgvGmzJZWCqZZvTkcH5pj96HkGwta6PLRNJHo/edit#heading=h.q86ztdt1gqy)
-    
--   [Attestation Consent Request Configuration (ACRC)](https://docs.google.com/document/d/1H3mJmgwgvGmzJZWCqZZvTkcH5pj96HkGwta6PLRNJHo/edit#heading=h.ro16ehbxwxm5)  if you would like to limit access to users who have attested specific information
-    
-
-  
-
-Once we receive, review and approve this information, we will provide you with a client_id, client_secret, and acrc_id, which you may use to load the globaliDConnect authentication client and obtain access tokens or authorization codes. We will send these to you via email in a password-protected encrypted archive.
+ * [Redirect URL](#redirect-url).
+ * [Attestation Consent Request Configuration (ACRC)](#attestation-consent-request-configuration-acrc) if you would like to limit access to users who have attested specific information.
+ * 
+Once we receive, review and approve this information, we will provide you with a `client_id`, `client_secret`, and `acrc_id`, which you may use to load the globaliDConnect authentication client and obtain access tokens or authorization codes. We will send these to you via email in a password-protected encrypted archive.
 
 ## Redirect URL
 
 This is the redirect URL to which users will be returned following successful onboarding or login. It should be in HTTPS format. You may provide multiple URLs (e.g. to different environments) if you wish. We will provide a unique client_id and client_secret for each environment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQzNjYyMTYsMTU0MTU5MDAsLTIwOD
-g3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTUzMjU1MjQ4MSwxNTQxNTkwMCwtMjA4OD
+c0NjYxMl19
 -->
