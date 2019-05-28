@@ -3,22 +3,15 @@
 # globaliDConnect
 Seamless, secure and trusted user onboarding and login
 
-[Overview](#overview)
-
+[Overview](#overview)    
 &nbsp;&nbsp;&nbsp;&nbsp;[Web/Mobile Support](#webmobile-support)    
 &nbsp;&nbsp;&nbsp;&nbsp;[Attestation Requirements](#attestation-requirements)
-[Getting Started](#getting-started)
-
-&nbsp;&nbsp;&nbsp;&nbsp;[Redirect URL](#redirect-url)
-
-&nbsp;&nbsp;&nbsp;&nbsp;[Attestation Consent Request Configuration (ACRC)](#attestation-consent-request-configuration-acrc)
-
-[Specifications](#specifications)
-
-&nbsp;&nbsp;&nbsp;&nbsp;[URL Format](#url-format)
-
-&nbsp;&nbsp;&nbsp;&nbsp;[URI Parameters](#uri-parameters)
-
+[Getting Started](#getting-started)    
+&nbsp;&nbsp;&nbsp;&nbsp;[Redirect URL](#redirect-url)    
+&nbsp;&nbsp;&nbsp;&nbsp;[Attestation Consent Request Configuration (ACRC)](#attestation-consent-request-configuration-acrc)    
+[Specifications](#specifications)     
+&nbsp;&nbsp;&nbsp;&nbsp;[URL Format](#url-format)    
+&nbsp;&nbsp;&nbsp;&nbsp;[URI Parameters](#uri-parameters)    
 &nbsp;&nbsp;&nbsp;&nbsp;[Response Handling](#response-handling)
 
 ## Overview
@@ -262,6 +255,6 @@ access_denied
 
 The resource owner denied the request
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjUzMDA3OSwtMzkwOTM2NTYxLDE1ND
-E1OTAwLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTU3NTYzMTE3LC0zOTA5MzY1NjEsMTU0MT
+U5MDAsLTIwODg3NDY2MTJdfQ==
 -->
